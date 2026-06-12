@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>가구 평면 심볼 미리보기</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #f4f5f7; margin: 24px; }
+  h1 { font-size: 18px; color: #2f333b; }
+  p.note { color: #6a7280; font-size: 13px; }
+  .grid { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; }
+  .card { background: #fff; border: 1px solid #dfe2e8; border-radius: 8px;
+          padding: 16px 20px; display: flex; flex-direction: column; align-items: center; }
+  .card .name { font-size: 14px; font-weight: 600; color: #384154; margin-top: 10px; }
+  .card .size { font-size: 12px; color: #8a91a0; }
+  .stage { display: flex; align-items: flex-start; justify-content: center;
+           background: repeating-linear-gradient(0deg, #fafbfc 0 19px, #eef0f3 19px 20px),
+                       repeating-linear-gradient(90deg, #fafbfc 0 19px, #eef0f3 19px 20px); }
+  svg { display: block; }
+  svg * { vector-effect: non-scaling-stroke; }
+  .wall { fill: #4a505c; }
+  .f { fill: #ffffff; stroke: #5a6472; stroke-width: 1.4; }
+  .l { fill: none; stroke: #5a6472; stroke-width: 1.1; }
+  .d { fill: none; stroke: #8a91a0; stroke-width: 1.1; stroke-dasharray: 5 4; }
+</style>
+</head>
+<body>
+<h1>가구 평면(top-view) 심볼 제안 — 위쪽이 벽(스냅되는 뒷면)</h1>
+<p class="note">실제 기본 크기 비율(0.12px/mm). 외곽선 #5a6472, 흰 채움. 선택 시 외곽선만 파란색으로 강조 예정.</p>
+<div class="grid">
+
+  <!-- 책상 1200x600 : 사각형 + 뒷쪽 150mm 지점 가로선(상판/수납 구분) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="168" height="100" viewBox="-100 -100 1400 800">
+        <rect class="wall" x="-100" y="-100" width="1400" height="100"/>
+        <rect class="f" x="0" y="0" width="1200" height="600"/>
+        <line class="l" x1="0" y1="150" x2="1200" y2="150"/>
+      </svg>
+    </div>
+    <div class="name">책상</div><div class="size">1200 × 600</div>
+  </div>
+
+  <!-- 식탁 1400x800 : 모서리 둥근 사각, 매끈하게 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="192" height="120" viewBox="-100 -100 1600 1000">
+        <rect class="wall" x="-100" y="-100" width="1600" height="100"/>
+        <rect class="f" x="0" y="0" width="1400" height="800" rx="60"/>
+      </svg>
+    </div>
+    <div class="name">식탁</div><div class="size">1400 × 800</div>
+  </div>
+
+  <!-- 의자 450x450 : 등받이(뒷쪽 가로 바) + 좌석(앞모서리 둥근 사각) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="78" height="78" viewBox="-100 -100 650 650">
+        <rect class="wall" x="-100" y="-100" width="650" height="100"/>
+        <rect class="f" x="20" y="0" width="410" height="100" rx="45"/>
+        <path class="f" d="M0 110 H450 V330 Q450 450 330 450 H120 Q0 450 0 330 Z"/>
+      </svg>
+    </div>
+    <div class="name">의자</div><div class="size">450 × 450</div>
+  </div>
+
+  <!-- 침대(1인) 1100x2100 : 매트리스 + 베개 1개 + 이불선/접힘 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="156" height="276" viewBox="-100 -100 1300 2300">
+        <rect class="wall" x="-100" y="-100" width="1300" height="100"/>
+        <rect class="f" x="0" y="0" width="1100" height="2100" rx="40"/>
+        <rect class="f" x="250" y="100" width="600" height="350" rx="80"/>
+        <line class="l" x1="0" y1="650" x2="1100" y2="650"/>
+        <line class="l" x1="800" y1="2100" x2="1100" y2="1800"/>
+      </svg>
+    </div>
+    <div class="name">침대(1인)</div><div class="size">1100 × 2100</div>
+  </div>
+
+  <!-- 침대(2인) 1600x2100 : 매트리스 + 베개 2개 + 이불선/접힘 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="216" height="276" viewBox="-100 -100 1800 2300">
+        <rect class="wall" x="-100" y="-100" width="1800" height="100"/>
+        <rect class="f" x="0" y="0" width="1600" height="2100" rx="40"/>
+        <rect class="f" x="130" y="100" width="600" height="350" rx="80"/>
+        <rect class="f" x="870" y="100" width="600" height="350" rx="80"/>
+        <line class="l" x1="0" y1="650" x2="1600" y2="650"/>
+        <line class="l" x1="1300" y1="2100" x2="1600" y2="1800"/>
+      </svg>
+    </div>
+    <div class="name">침대(2인)</div><div class="size">1600 × 2100</div>
+  </div>
+
+  <!-- 소파(1인) 800x900 : 등받이 + 양팔걸이, 좌석 1 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="120" height="132" viewBox="-100 -100 1000 1100">
+        <rect class="wall" x="-100" y="-100" width="1000" height="100"/>
+        <path class="f" d="M0 120 Q0 0 120 0 H680 Q800 0 800 120 V780 Q800 900 680 900 H120 Q0 900 0 780 Z"/>
+        <line class="l" x1="130" y1="180" x2="670" y2="180"/>
+        <line class="l" x1="130" y1="0" x2="130" y2="900"/>
+        <line class="l" x1="670" y1="0" x2="670" y2="900"/>
+      </svg>
+    </div>
+    <div class="name">소파(1인)</div><div class="size">800 × 900</div>
+  </div>
+
+  <!-- 소파(2인) 1600x900 : 좌석 2분할 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="216" height="132" viewBox="-100 -100 1800 1100">
+        <rect class="wall" x="-100" y="-100" width="1800" height="100"/>
+        <path class="f" d="M0 120 Q0 0 120 0 H1480 Q1600 0 1600 120 V780 Q1600 900 1480 900 H120 Q0 900 0 780 Z"/>
+        <line class="l" x1="130" y1="180" x2="1470" y2="180"/>
+        <line class="l" x1="130" y1="0" x2="130" y2="900"/>
+        <line class="l" x1="1470" y1="0" x2="1470" y2="900"/>
+        <line class="l" x1="800" y1="180" x2="800" y2="900"/>
+      </svg>
+    </div>
+    <div class="name">소파(2인)</div><div class="size">1600 × 900</div>
+  </div>
+
+  <!-- 소파(3인) 2400x900 : 좌석 3분할 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="312" height="132" viewBox="-100 -100 2600 1100">
+        <rect class="wall" x="-100" y="-100" width="2600" height="100"/>
+        <path class="f" d="M0 120 Q0 0 120 0 H2280 Q2400 0 2400 120 V780 Q2400 900 2280 900 H120 Q0 900 0 780 Z"/>
+        <line class="l" x1="130" y1="180" x2="2270" y2="180"/>
+        <line class="l" x1="130" y1="0" x2="130" y2="900"/>
+        <line class="l" x1="2270" y1="0" x2="2270" y2="900"/>
+        <line class="l" x1="843" y1="180" x2="843" y2="900"/>
+        <line class="l" x1="1557" y1="180" x2="1557" y2="900"/>
+      </svg>
+    </div>
+    <div class="name">소파(3인)</div><div class="size">2400 × 900</div>
+  </div>
+
+  <!-- 소파(4인) 3200x900 : 좌석 4분할 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="408" height="132" viewBox="-100 -100 3400 1100">
+        <rect class="wall" x="-100" y="-100" width="3400" height="100"/>
+        <path class="f" d="M0 120 Q0 0 120 0 H3080 Q3200 0 3200 120 V780 Q3200 900 3080 900 H120 Q0 900 0 780 Z"/>
+        <line class="l" x1="130" y1="180" x2="3070" y2="180"/>
+        <line class="l" x1="130" y1="0" x2="130" y2="900"/>
+        <line class="l" x1="3070" y1="0" x2="3070" y2="900"/>
+        <line class="l" x1="865" y1="180" x2="865" y2="900"/>
+        <line class="l" x1="1600" y1="180" x2="1600" y2="900"/>
+        <line class="l" x1="2335" y1="180" x2="2335" y2="900"/>
+      </svg>
+    </div>
+    <div class="name">소파(4인)</div><div class="size">3200 × 900</div>
+  </div>
+
+  <!-- 테이블 800x800 : 모서리 둥근 정사각 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="120" height="72" viewBox="-100 -100 1000 600">
+        <rect class="wall" x="-100" y="-100" width="1000" height="100"/>
+        <rect class="f" x="0" y="0" width="800" height="400" rx="60"/>
+      </svg>
+    </div>
+    <div class="name">테이블</div><div class="size">800 × 400</div>
+  </div>
+
+  <!-- 옷장 1200x600 : 사각형 + 옷봉(가로선) + 옷걸이 표시(세로 짧은 선들) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="168" height="100" viewBox="-100 -100 1400 800">
+        <rect class="wall" x="-100" y="-100" width="1400" height="100"/>
+        <rect class="f" x="0" y="0" width="1200" height="600"/>
+        <line class="l" x1="50" y1="300" x2="1150" y2="300"/>
+        <line class="d" x1="150"  y1="130" x2="150"  y2="470"/>
+        <line class="d" x1="300"  y1="130" x2="300"  y2="470"/>
+        <line class="d" x1="450"  y1="130" x2="450"  y2="470"/>
+        <line class="d" x1="600"  y1="130" x2="600"  y2="470"/>
+        <line class="d" x1="750"  y1="130" x2="750"  y2="470"/>
+        <line class="d" x1="900"  y1="130" x2="900"  y2="470"/>
+        <line class="d" x1="1050" y1="130" x2="1050" y2="470"/>
+      </svg>
+    </div>
+    <div class="name">옷장</div><div class="size">1200 × 600</div>
+  </div>
+
+</div>
+
+<h1>가전 평면 심볼 제안</h1>
+<div class="grid">
+
+  <!-- TV 1300x150 : 얇은 본체 + 화면(앞면) 선 + 중앙 스탠드 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="180" height="42" viewBox="-100 -100 1500 350">
+        <rect class="wall" x="-100" y="-100" width="1500" height="100"/>
+        <rect class="f" x="0" y="0" width="1300" height="150"/>
+        <line class="l" x1="50" y1="105" x2="1250" y2="105"/>
+        <rect class="l" x="560" y="15" width="180" height="45"/>
+      </svg>
+    </div>
+    <div class="name">TV</div><div class="size">1300 × 150</div>
+  </div>
+
+  <!-- 냉장고 900x900 : 사각형 + 앞면 도어선 + 도어 분할(양문형) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="132" height="132" viewBox="-100 -100 1100 1100">
+        <rect class="wall" x="-100" y="-100" width="1100" height="100"/>
+        <rect class="f" x="0" y="0" width="900" height="900"/>
+        <line class="l" x1="0" y1="810" x2="900" y2="810"/>
+        <line class="l" x1="450" y1="810" x2="450" y2="900"/>
+      </svg>
+    </div>
+    <div class="name">냉장고</div><div class="size">900 × 900</div>
+  </div>
+
+  <!-- 세탁기 800x800 : 사각형 + 드럼(큰 원) + 중심 원 + 뒷면 컨트롤선 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="120" height="120" viewBox="-100 -100 1000 1000">
+        <rect class="wall" x="-100" y="-100" width="1000" height="100"/>
+        <rect class="f" x="0" y="0" width="800" height="800"/>
+        <line class="l" x1="0" y1="130" x2="800" y2="130"/>
+        <circle class="l" cx="400" cy="465" r="270"/>
+        <circle class="l" cx="400" cy="465" r="100"/>
+      </svg>
+    </div>
+    <div class="name">세탁기</div><div class="size">800 × 800</div>
+  </div>
+
+  <!-- 에어콘 600x300 : 사각형 + 앞면 토출구(루버) 선들 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="96" height="60" viewBox="-100 -100 800 500">
+        <rect class="wall" x="-100" y="-100" width="800" height="100"/>
+        <rect class="f" x="0" y="0" width="600" height="300"/>
+        <line class="l" x1="60" y1="180" x2="540" y2="180"/>
+        <line class="l" x1="60" y1="225" x2="540" y2="225"/>
+        <line class="l" x1="60" y1="270" x2="540" y2="270"/>
+      </svg>
+    </div>
+    <div class="name">에어콘</div><div class="size">600 × 300</div>
+  </div>
+
+</div>
+
+<h1>주방/욕실 평면 심볼 제안</h1>
+<div class="grid">
+
+  <!-- 싱크대 1200x600 : 카운터 사각형 (싱크볼/쿡탑은 별도 오브젝트로 올려놓음) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="168" height="96" viewBox="-100 -100 1400 800">
+        <rect class="wall" x="-100" y="-100" width="1400" height="100"/>
+        <rect class="f" x="0" y="0" width="1200" height="600"/>
+      </svg>
+    </div>
+    <div class="name">싱크대</div><div class="size">1200 × 600</div>
+  </div>
+
+  <!-- 쿡탑(대) 600x500 : 사각형 + 화구 4개(2x2, r=min(90,w/4,d/6)) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="96" height="84" viewBox="-100 -100 800 700">
+        <rect class="wall" x="-100" y="-100" width="800" height="100"/>
+        <rect class="f" x="0" y="0" width="600" height="500"/>
+        <circle class="l" cx="150" cy="125" r="83"/>
+        <circle class="l" cx="450" cy="125" r="83"/>
+        <circle class="l" cx="150" cy="375" r="83"/>
+        <circle class="l" cx="450" cy="375" r="83"/>
+      </svg>
+    </div>
+    <div class="name">쿡탑(대)</div><div class="size">600 × 500</div>
+  </div>
+
+  <!-- 쿡탑(소) 400x500 : 사각형 + 화구 2개(앞뒤) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="72" height="84" viewBox="-100 -100 600 700">
+        <rect class="wall" x="-100" y="-100" width="600" height="100"/>
+        <rect class="f" x="0" y="0" width="400" height="500"/>
+        <circle class="l" cx="200" cy="125" r="83"/>
+        <circle class="l" cx="200" cy="375" r="83"/>
+      </svg>
+    </div>
+    <div class="name">쿡탑(소)</div><div class="size">400 × 500</div>
+  </div>
+
+  <!-- 후드 800x500 : 외곽 + 뒤쪽 덕트 원 + 앞면 배기 그릴 3선 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="120" height="84" viewBox="-100 -100 1000 700">
+        <rect class="wall" x="-100" y="-100" width="1000" height="100"/>
+        <rect class="f" x="0" y="0" width="800" height="500"/>
+        <circle class="l" cx="400" cy="160" r="90"/>
+        <line class="l" x1="80" y1="340" x2="720" y2="340"/>
+        <line class="l" x1="80" y1="400" x2="720" y2="400"/>
+        <line class="l" x1="80" y1="460" x2="720" y2="460"/>
+      </svg>
+    </div>
+    <div class="name">후드</div><div class="size">800 × 500</div>
+  </div>
+
+  <!-- 싱크볼 900x500 : 탑마운트 — 플랜지(외곽) + 보울(내부 라운드 사각,
+       수전쪽 플랜지 넓게) + 중앙 배수구(이중 원) + 수전 구멍(뒤 중앙) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="132" height="84" viewBox="-100 -100 1100 700">
+        <rect class="wall" x="-100" y="-100" width="1100" height="100"/>
+        <rect class="f" x="0" y="0" width="900" height="500" rx="20"/>
+        <rect class="l" x="50" y="80" width="800" height="380" rx="45"/>
+        <circle class="l" cx="450" cy="270" r="55"/>
+        <circle class="l" cx="450" cy="270" r="26"/>
+        <circle class="l" cx="450" cy="40" r="16"/>
+      </svg>
+    </div>
+    <div class="name">싱크볼</div><div class="size">900 × 500</div>
+  </div>
+
+  <!-- 세면대(단독) 500x400 : 위는 평평, 아래는 둥근 보울 + 내부 타원 400x300 + 수전 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="84" height="72" viewBox="-100 -100 700 600">
+        <rect class="wall" x="-100" y="-100" width="700" height="100"/>
+        <path class="f" d="M0 55 Q0 0 55 0 H445 Q500 0 500 55 V215 Q500 400 250 400 Q0 400 0 215 Z"/>
+        <ellipse class="l" cx="250" cy="215" rx="200" ry="150"/>
+        <circle class="l" cx="250" cy="32" r="18"/>
+      </svg>
+    </div>
+    <div class="name">세면대(단독)</div><div class="size">500 × 400</div>
+  </div>
+
+  <!-- 세면대(카운터) 900x600 : 카운터 사각 + 타원 보울 + 수전 -->
+  <div class="card">
+    <div class="stage">
+      <svg width="132" height="96" viewBox="-100 -100 1100 800">
+        <rect class="wall" x="-100" y="-100" width="1100" height="100"/>
+        <rect class="f" x="0" y="0" width="900" height="600"/>
+        <ellipse class="l" cx="450" cy="330" rx="200" ry="150"/>
+        <circle class="l" cx="450" cy="90" r="25"/>
+      </svg>
+    </div>
+    <div class="name">세면대(카운터)</div><div class="size">900 × 600</div>
+  </div>
+
+  <!-- 변기 400x750 : 물탱크(뒤 사각 400x250) + 보울(타원 400x500) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="72" height="114" viewBox="-100 -100 600 950">
+        <rect class="wall" x="-100" y="-100" width="600" height="100"/>
+        <rect class="f" x="0" y="0" width="400" height="250" rx="30"/>
+        <ellipse class="f" cx="200" cy="500" rx="175" ry="250"/>
+      </svg>
+    </div>
+    <div class="name">변기</div><div class="size">400 × 750</div>
+  </div>
+
+  <!-- 욕조 800x1500 : 외곽 + 내부(발치쪽 둥근) + 배수구(벽쪽) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="120" height="204" viewBox="-100 -100 1000 1700">
+        <rect class="wall" x="-100" y="-100" width="1000" height="100"/>
+        <rect class="f" x="0" y="0" width="800" height="1500" rx="80"/>
+        <path class="l" d="M130 130 H670 V1130 Q670 1430 400 1430 Q130 1430 130 1130 Z"/>
+        <circle class="l" cx="400" cy="230" r="40"/>
+      </svg>
+    </div>
+    <div class="name">욕조</div><div class="size">800 × 1500</div>
+  </div>
+
+  <!-- 샤워기 100x200 : 벽에서 나오는 암(사각) + 헤드(원, 위에서 본 모습) -->
+  <div class="card">
+    <div class="stage">
+      <svg width="36" height="48" viewBox="-100 -100 300 400">
+        <rect class="wall" x="-100" y="-100" width="300" height="100"/>
+        <rect class="f" x="25" y="0" width="50" height="100"/>
+        <circle class="f" cx="50" cy="150" r="50"/>
+        <circle class="l" cx="50" cy="150" r="31"/>
+        <circle class="l" cx="50" cy="150" r="6"/>
+      </svg>
+    </div>
+    <div class="name">샤워기</div><div class="size">100 × 200</div>
+  </div>
+
+  <!-- 샤워 파티션 100x600 : 점유 두께 100mm, 그려지는 유리 패널은 20mm -->
+  <div class="card">
+    <div class="stage">
+      <svg width="36" height="96" viewBox="-100 -100 300 800">
+        <rect class="wall" x="-100" y="-100" width="300" height="100"/>
+        <rect class="f" x="40" y="0" width="20" height="600"/>
+      </svg>
+    </div>
+    <div class="name">샤워 파티션</div><div class="size">100 × 600</div>
+  </div>
+
+</div>
+</body>
+</html>

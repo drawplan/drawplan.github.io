@@ -1,0 +1,723 @@
+{
+  "meta": {
+    "app": "drawplan",
+    "name": "예제 4",
+    "description": "가구와 가전 추가",
+    "modifiedAt": "2026-06-12T09:09:08.960Z",
+    "exportedAt": "2026-06-12T09:09:25.638Z"
+  },
+  "walls": {
+    "034dbb03-f3a4-4ada-a52c-69504be854cd": {
+      "id": "034dbb03-f3a4-4ada-a52c-69504be854cd",
+      "a": {
+        "x": 5400,
+        "y": 3700.000000000001
+      },
+      "b": {
+        "x": 18000,
+        "y": 3700.000000000001
+      },
+      "thickness": 300,
+      "kind": "exterior"
+    },
+    "96b2d236-8b22-4447-a3f0-1abb66d7517b": {
+      "id": "96b2d236-8b22-4447-a3f0-1abb66d7517b",
+      "a": {
+        "x": 18000,
+        "y": 3700.000000000001
+      },
+      "b": {
+        "x": 18000,
+        "y": 10600
+      },
+      "thickness": 300,
+      "kind": "exterior"
+    },
+    "7457377e-6272-42df-b0c7-4979517ba33f": {
+      "id": "7457377e-6272-42df-b0c7-4979517ba33f",
+      "a": {
+        "x": 18000,
+        "y": 10600
+      },
+      "b": {
+        "x": 5400,
+        "y": 10600.000000000002
+      },
+      "thickness": 300,
+      "kind": "exterior"
+    },
+    "281cf0b3-3f8a-40d8-96e0-b8e4554e2a73": {
+      "id": "281cf0b3-3f8a-40d8-96e0-b8e4554e2a73",
+      "a": {
+        "x": 5400,
+        "y": 10600.000000000002
+      },
+      "b": {
+        "x": 5400,
+        "y": 3700.000000000001
+      },
+      "thickness": 300,
+      "kind": "exterior"
+    },
+    "abd513c5-74c5-4163-988f-f2f1f2bde10f": {
+      "id": "abd513c5-74c5-4163-988f-f2f1f2bde10f",
+      "a": {
+        "x": 7200,
+        "y": 3700.000000000001
+      },
+      "b": {
+        "x": 7200,
+        "y": 6300.000000000001
+      },
+      "thickness": 200,
+      "kind": "interior"
+    },
+    "86fdcda6-9941-4595-aa77-ffe7d47ca5f0": {
+      "id": "86fdcda6-9941-4595-aa77-ffe7d47ca5f0",
+      "a": {
+        "x": 7200,
+        "y": 6300.000000000001
+      },
+      "b": {
+        "x": 5400,
+        "y": 6300.000000000001
+      },
+      "thickness": 200,
+      "kind": "interior"
+    },
+    "aa57eeef-7618-4b19-87ab-ece69d182552": {
+      "id": "aa57eeef-7618-4b19-87ab-ece69d182552",
+      "a": {
+        "x": 5400,
+        "y": 7600.000000000002
+      },
+      "b": {
+        "x": 7200,
+        "y": 7600.000000000002
+      },
+      "thickness": 200,
+      "kind": "interior"
+    },
+    "8b8774a8-73ad-4e9a-b34e-c971d93ecc6b": {
+      "id": "8b8774a8-73ad-4e9a-b34e-c971d93ecc6b",
+      "a": {
+        "x": 7200,
+        "y": 7600.000000000002
+      },
+      "b": {
+        "x": 7200,
+        "y": 10600.000000000002
+      },
+      "thickness": 200,
+      "kind": "interior"
+    },
+    "fcfd7daf-4f72-47e2-860a-d5c91c8ea694": {
+      "id": "fcfd7daf-4f72-47e2-860a-d5c91c8ea694",
+      "a": {
+        "x": 11400,
+        "y": 7600
+      },
+      "b": {
+        "x": 11400,
+        "y": 10600.000000000002
+      },
+      "thickness": 200,
+      "kind": "interior"
+    },
+    "8fffb0ff-573b-4198-8d2b-7c45a87be693": {
+      "id": "8fffb0ff-573b-4198-8d2b-7c45a87be693",
+      "a": {
+        "x": 11400,
+        "y": 7600
+      },
+      "b": {
+        "x": 14300,
+        "y": 7600
+      },
+      "thickness": 200,
+      "kind": "interior"
+    },
+    "846308ff-eac2-420a-8168-fa36e2cc0327": {
+      "id": "846308ff-eac2-420a-8168-fa36e2cc0327",
+      "a": {
+        "x": 14400,
+        "y": 3700.000000000001
+      },
+      "b": {
+        "x": 14400,
+        "y": 10600
+      },
+      "thickness": 200,
+      "kind": "interior"
+    },
+    "aeee9564-a76f-4f90-99b3-db43efae1777": {
+      "id": "aeee9564-a76f-4f90-99b3-db43efae1777",
+      "a": {
+        "x": 11400,
+        "y": 3700.000000000001
+      },
+      "b": {
+        "x": 11400,
+        "y": 6300.000000000001
+      },
+      "thickness": 200,
+      "kind": "interior"
+    },
+    "9cb0e670-7f61-4737-ac85-ea7bbbf0c420": {
+      "id": "9cb0e670-7f61-4737-ac85-ea7bbbf0c420",
+      "a": {
+        "x": 11400,
+        "y": 6300.000000000001
+      },
+      "b": {
+        "x": 16000,
+        "y": 6300.000000000001
+      },
+      "thickness": 200,
+      "kind": "interior"
+    },
+    "82019c06-44e1-401a-a2bd-02e7757987ed": {
+      "id": "82019c06-44e1-401a-a2bd-02e7757987ed",
+      "a": {
+        "x": 16000,
+        "y": 3700.000000000001
+      },
+      "b": {
+        "x": 16000,
+        "y": 7300.000000000001
+      },
+      "thickness": 200,
+      "kind": "interior"
+    },
+    "b225d7ea-fa50-49aa-a37d-855873837b96": {
+      "id": "b225d7ea-fa50-49aa-a37d-855873837b96",
+      "a": {
+        "x": 16000,
+        "y": 7300.000000000001
+      },
+      "b": {
+        "x": 18000,
+        "y": 7300.000000000001
+      },
+      "thickness": 200,
+      "kind": "interior"
+    }
+  },
+  "openings": {
+    "4adffdfb-a56d-423a-a6e3-a53f72be370f": {
+      "id": "4adffdfb-a56d-423a-a6e3-a53f72be370f",
+      "wallId": "7457377e-6272-42df-b0c7-4979517ba33f",
+      "type": "door",
+      "style": "hinge",
+      "position": 11500,
+      "width": 900,
+      "flipH": true,
+      "flipV": true
+    },
+    "e70be399-2355-4a13-8fc8-f00b792471bd": {
+      "id": "e70be399-2355-4a13-8fc8-f00b792471bd",
+      "wallId": "86fdcda6-9941-4595-aa77-ffe7d47ca5f0",
+      "type": "door",
+      "style": "hinge",
+      "position": 1150,
+      "width": 700,
+      "flipH": true,
+      "flipV": false
+    },
+    "d8d2008b-6ca1-40f7-8f29-c2afb3b42fd5": {
+      "id": "d8d2008b-6ca1-40f7-8f29-c2afb3b42fd5",
+      "wallId": "846308ff-eac2-420a-8168-fa36e2cc0327",
+      "type": "door",
+      "style": "hinge",
+      "position": 3250,
+      "width": 900,
+      "flipH": false,
+      "flipV": true
+    },
+    "da31ec33-cc60-4e89-8623-a0eec653e1a1": {
+      "id": "da31ec33-cc60-4e89-8623-a0eec653e1a1",
+      "wallId": "8fffb0ff-573b-4198-8d2b-7c45a87be693",
+      "type": "door",
+      "style": "hinge",
+      "position": 700,
+      "width": 900,
+      "flipH": false,
+      "flipV": false
+    },
+    "bed161c6-0e62-490d-a8e6-b4ac2586ed10": {
+      "id": "bed161c6-0e62-490d-a8e6-b4ac2586ed10",
+      "wallId": "aeee9564-a76f-4f90-99b3-db43efae1777",
+      "type": "door",
+      "style": "pocket",
+      "position": 1400,
+      "width": 800,
+      "flipH": false,
+      "flipV": false
+    },
+    "62377d8a-1235-46f5-a09d-b0dab4747718": {
+      "id": "62377d8a-1235-46f5-a09d-b0dab4747718",
+      "wallId": "82019c06-44e1-401a-a2bd-02e7757987ed",
+      "type": "door",
+      "style": "hinge",
+      "position": 2000,
+      "width": 700,
+      "flipH": true,
+      "flipV": false
+    },
+    "e1058c85-cfee-40e9-91bf-e203a0c36110": {
+      "id": "e1058c85-cfee-40e9-91bf-e203a0c36110",
+      "wallId": "b225d7ea-fa50-49aa-a37d-855873837b96",
+      "type": "door",
+      "style": "pocket",
+      "position": 650,
+      "width": 900,
+      "flipH": true,
+      "flipV": true
+    },
+    "ba0532ad-0197-46d7-8939-0e52b56e339b": {
+      "id": "ba0532ad-0197-46d7-8939-0e52b56e339b",
+      "wallId": "7457377e-6272-42df-b0c7-4979517ba33f",
+      "type": "window",
+      "style": "sliding",
+      "position": 8700,
+      "width": 2700,
+      "flipH": true,
+      "flipV": true
+    },
+    "0430ba2e-226d-492a-b32f-27f2311237bd": {
+      "id": "0430ba2e-226d-492a-b32f-27f2311237bd",
+      "wallId": "7457377e-6272-42df-b0c7-4979517ba33f",
+      "type": "window",
+      "style": "sliding",
+      "position": 5100,
+      "width": 1200,
+      "flipH": true,
+      "flipV": true
+    },
+    "cbe29c83-1e95-45ca-8db9-153e0962ae61": {
+      "id": "cbe29c83-1e95-45ca-8db9-153e0962ae61",
+      "wallId": "7457377e-6272-42df-b0c7-4979517ba33f",
+      "type": "window",
+      "style": "sliding",
+      "position": 1820,
+      "width": 1800,
+      "flipH": true,
+      "flipV": true
+    },
+    "4108bea0-e3b4-4bcb-a6ca-40a9b68d0b9a": {
+      "id": "4108bea0-e3b4-4bcb-a6ca-40a9b68d0b9a",
+      "wallId": "034dbb03-f3a4-4ada-a52c-69504be854cd",
+      "type": "window",
+      "style": "hung",
+      "position": 11350,
+      "width": 500,
+      "flipH": false,
+      "flipV": true
+    },
+    "7334dfbd-4ccd-4a20-85f5-ab6e3b665a6b": {
+      "id": "7334dfbd-4ccd-4a20-85f5-ab6e3b665a6b",
+      "wallId": "034dbb03-f3a4-4ada-a52c-69504be854cd",
+      "type": "window",
+      "style": "awning",
+      "position": 9800,
+      "width": 500,
+      "flipH": false,
+      "flipV": true
+    },
+    "ac9c6864-2454-4bf5-ad4a-d1a76d0b8905": {
+      "id": "ac9c6864-2454-4bf5-ad4a-d1a76d0b8905",
+      "wallId": "034dbb03-f3a4-4ada-a52c-69504be854cd",
+      "type": "window",
+      "style": "sliding",
+      "position": 4100,
+      "width": 900,
+      "flipH": false,
+      "flipV": true
+    },
+    "77b23513-f780-489e-a7b3-d2518847c61c": {
+      "id": "77b23513-f780-489e-a7b3-d2518847c61c",
+      "wallId": "034dbb03-f3a4-4ada-a52c-69504be854cd",
+      "type": "window",
+      "style": "awning",
+      "position": 930,
+      "width": 500,
+      "flipH": false,
+      "flipV": true
+    },
+    "8673a2fb-d8f9-4705-b54c-58e8d469eccc": {
+      "id": "8673a2fb-d8f9-4705-b54c-58e8d469eccc",
+      "wallId": "281cf0b3-3f8a-40d8-96e0-b8e4554e2a73",
+      "type": "window",
+      "style": "hung",
+      "position": 3650,
+      "width": 400,
+      "flipH": true,
+      "flipV": true
+    },
+    "462a3112-9b5e-4394-84ea-f725a907fcbe": {
+      "id": "462a3112-9b5e-4394-84ea-f725a907fcbe",
+      "wallId": "aa57eeef-7618-4b19-87ab-ece69d182552",
+      "type": "door",
+      "style": "sliding",
+      "position": 1050,
+      "width": 1200
+    },
+    "2abde4a6-3b7a-4a66-86c6-e424894d4082": {
+      "id": "2abde4a6-3b7a-4a66-86c6-e424894d4082",
+      "wallId": "034dbb03-f3a4-4ada-a52c-69504be854cd",
+      "type": "door",
+      "style": "hinge",
+      "position": 8350,
+      "width": 900,
+      "flipH": true,
+      "flipV": true
+    }
+  },
+  "rooms": {},
+  "furniture": {
+    "c9656da2-1c78-4447-b70f-50bcdfa7a7c2": {
+      "id": "c9656da2-1c78-4447-b70f-50bcdfa7a7c2",
+      "kind": "bed",
+      "center": {
+        "x": 16800,
+        "y": 9150
+      },
+      "width": 1600,
+      "depth": 2100,
+      "rotation": 90
+    },
+    "f78dafaf-9886-4513-84be-12acc0dd4a1e": {
+      "id": "f78dafaf-9886-4513-84be-12acc0dd4a1e",
+      "kind": "chair",
+      "center": {
+        "x": 12820,
+        "y": 9810
+      },
+      "width": 450,
+      "depth": 450,
+      "rotation": 0
+    },
+    "454297e0-069c-456a-bbb6-e4adccf80191": {
+      "id": "454297e0-069c-456a-bbb6-e4adccf80191",
+      "kind": "desk",
+      "center": {
+        "x": 12840,
+        "y": 10150
+      },
+      "width": 1200,
+      "depth": 600,
+      "rotation": 180
+    },
+    "84d65271-76e7-488a-886b-19feaaf11e1b": {
+      "id": "84d65271-76e7-488a-886b-19feaaf11e1b",
+      "kind": "cabinet",
+      "center": {
+        "x": 14150,
+        "y": 9075
+      },
+      "width": 300,
+      "depth": 2750,
+      "rotation": 0
+    },
+    "67c9ba1a-89f1-4142-a371-894aa6bea7d6": {
+      "id": "67c9ba1a-89f1-4142-a371-894aa6bea7d6",
+      "kind": "fridge",
+      "center": {
+        "x": 7750,
+        "y": 4300.000000000001
+      },
+      "width": 900,
+      "depth": 900,
+      "rotation": 0
+    },
+    "26aad918-acd1-4c0b-994b-fbc4d50ebdda": {
+      "id": "26aad918-acd1-4c0b-994b-fbc4d50ebdda",
+      "kind": "sink",
+      "center": {
+        "x": 9750,
+        "y": 4150.000000000001
+      },
+      "width": 3100,
+      "depth": 600,
+      "rotation": 0
+    },
+    "2601008e-7e96-439f-a244-d8508f32527b": {
+      "id": "2601008e-7e96-439f-a244-d8508f32527b",
+      "kind": "sinkbowl",
+      "center": {
+        "x": 9250,
+        "y": 4150.000000000001
+      },
+      "width": 900,
+      "depth": 500,
+      "rotation": 0
+    },
+    "c43b1eae-0d19-4ea5-94f7-22cf35f193a6": {
+      "id": "c43b1eae-0d19-4ea5-94f7-22cf35f193a6",
+      "kind": "cooktop",
+      "center": {
+        "x": 10750,
+        "y": 4150.000000000001
+      },
+      "width": 600,
+      "depth": 500,
+      "rotation": 0
+    },
+    "2c2f3005-cd2a-423a-84a2-5456bc7a5c35": {
+      "id": "2c2f3005-cd2a-423a-84a2-5456bc7a5c35",
+      "kind": "sink",
+      "center": {
+        "x": 10700,
+        "y": 6000.000000000001
+      },
+      "width": 1200,
+      "depth": 800,
+      "rotation": 180
+    },
+    "c02092a0-61db-4e3e-b151-6d95e5401fdf": {
+      "id": "c02092a0-61db-4e3e-b151-6d95e5401fdf",
+      "kind": "chair",
+      "center": {
+        "x": 9140,
+        "y": 5560
+      },
+      "width": 450,
+      "depth": 450,
+      "rotation": 0
+    },
+    "ba35d889-f5e1-4859-a5ef-0548bda94bd4": {
+      "id": "ba35d889-f5e1-4859-a5ef-0548bda94bd4",
+      "kind": "chair",
+      "center": {
+        "x": 9690,
+        "y": 5560
+      },
+      "width": 450,
+      "depth": 450,
+      "rotation": 0
+    },
+    "8dbf8751-5b88-4154-abbc-2f8da1465dfa": {
+      "id": "8dbf8751-5b88-4154-abbc-2f8da1465dfa",
+      "kind": "chair",
+      "center": {
+        "x": 9140,
+        "y": 6445
+      },
+      "width": 450,
+      "depth": 450,
+      "rotation": 0,
+      "flipV": true
+    },
+    "0cc79cac-fb8f-47af-b359-b53a04a8580e": {
+      "id": "0cc79cac-fb8f-47af-b359-b53a04a8580e",
+      "kind": "chair",
+      "center": {
+        "x": 9690,
+        "y": 6445
+      },
+      "width": 450,
+      "depth": 450,
+      "rotation": 0,
+      "flipV": true
+    },
+    "db80e39b-a86d-4df3-bffb-2279fdef4305": {
+      "id": "db80e39b-a86d-4df3-bffb-2279fdef4305",
+      "kind": "dining",
+      "center": {
+        "x": 9400,
+        "y": 6000.000000000001
+      },
+      "width": 1400,
+      "depth": 800,
+      "rotation": 0
+    },
+    "d380dec9-2e34-4afe-81db-dcea2205b7c1": {
+      "id": "d380dec9-2e34-4afe-81db-dcea2205b7c1",
+      "kind": "sofa",
+      "center": {
+        "x": 10850,
+        "y": 8970
+      },
+      "width": 2400,
+      "depth": 900,
+      "rotation": 90
+    },
+    "43cb6208-346a-4df6-a777-49e7c4c6c902": {
+      "id": "43cb6208-346a-4df6-a777-49e7c4c6c902",
+      "kind": "table",
+      "center": {
+        "x": 7500,
+        "y": 9120.000000000002
+      },
+      "width": 1800,
+      "depth": 400,
+      "rotation": -90
+    },
+    "acdda154-d263-4b2e-823a-3a69a88e8336": {
+      "id": "acdda154-d263-4b2e-823a-3a69a88e8336",
+      "kind": "tv",
+      "center": {
+        "x": 7475,
+        "y": 9200.000000000002
+      },
+      "width": 1300,
+      "depth": 150,
+      "rotation": -90
+    },
+    "6268db5a-cbb0-4134-abf5-845c9310741c": {
+      "id": "6268db5a-cbb0-4134-abf5-845c9310741c",
+      "kind": "toilet",
+      "center": {
+        "x": 6725,
+        "y": 5800.000000000001
+      },
+      "width": 400,
+      "depth": 750,
+      "rotation": 90
+    },
+    "99871867-7423-48c7-92a3-e510751a49b3": {
+      "id": "99871867-7423-48c7-92a3-e510751a49b3",
+      "kind": "basin",
+      "center": {
+        "x": 6900,
+        "y": 5150.000000000001
+      },
+      "width": 500,
+      "depth": 400,
+      "rotation": 90
+    },
+    "d9513072-5396-41de-9b16-22b537c622eb": {
+      "id": "d9513072-5396-41de-9b16-22b537c622eb",
+      "kind": "bathtub",
+      "center": {
+        "x": 6325,
+        "y": 4250.000000000001
+      },
+      "width": 800,
+      "depth": 1550,
+      "rotation": -90,
+      "flipV": true
+    },
+    "e60c3822-580f-40e0-ad61-9f698206881f": {
+      "id": "e60c3822-580f-40e0-ad61-9f698206881f",
+      "kind": "toilet",
+      "center": {
+        "x": 14875,
+        "y": 5800.000000000001
+      },
+      "width": 400,
+      "depth": 750,
+      "rotation": -90
+    },
+    "8ff781b8-0597-4062-b8d3-88117d604ffc": {
+      "id": "8ff781b8-0597-4062-b8d3-88117d604ffc",
+      "kind": "basin",
+      "center": {
+        "x": 14700,
+        "y": 5150.000000000001
+      },
+      "width": 500,
+      "depth": 400,
+      "rotation": -90
+    },
+    "02a8275f-da29-412d-a889-90d8eb3defa0": {
+      "id": "02a8275f-da29-412d-a889-90d8eb3defa0",
+      "kind": "showerPartition",
+      "center": {
+        "x": 14800,
+        "y": 4700.000000000001
+      },
+      "width": 100,
+      "depth": 600,
+      "rotation": -90
+    },
+    "54723474-078f-46b6-97ac-412cef6e0e08": {
+      "id": "54723474-078f-46b6-97ac-412cef6e0e08",
+      "kind": "shower",
+      "center": {
+        "x": 14600,
+        "y": 4250.000000000001
+      },
+      "width": 100,
+      "depth": 200,
+      "rotation": -90
+    },
+    "b0198553-4716-43a1-81a9-5a8adc16a3df": {
+      "id": "b0198553-4716-43a1-81a9-5a8adc16a3df",
+      "kind": "wardrobe",
+      "center": {
+        "x": 17550,
+        "y": 5515.000000000001
+      },
+      "width": 3350,
+      "depth": 600,
+      "rotation": 90
+    },
+    "3bffbd09-2b81-42bd-98bf-fca94b0caa59": {
+      "id": "3bffbd09-2b81-42bd-98bf-fca94b0caa59",
+      "kind": "shoe",
+      "center": {
+        "x": 5700,
+        "y": 9075.000000000002
+      },
+      "width": 2750,
+      "depth": 300,
+      "rotation": -90
+    },
+    "f5245895-eb07-44bf-bdea-b49d921aaa2a": {
+      "id": "f5245895-eb07-44bf-bdea-b49d921aaa2a",
+      "kind": "sink",
+      "center": {
+        "x": 12300,
+        "y": 4150.000000000001
+      },
+      "width": 1600,
+      "depth": 600,
+      "rotation": 0
+    },
+    "ad93b4bc-8cb3-441d-8573-2ceb4888c691": {
+      "id": "ad93b4bc-8cb3-441d-8573-2ceb4888c691",
+      "kind": "washer",
+      "center": {
+        "x": 13900,
+        "y": 5800.000000000001
+      },
+      "width": 800,
+      "depth": 800,
+      "rotation": -180
+    },
+    "8d7c5cf1-11dd-436a-9f40-fe744e2074ee": {
+      "id": "8d7c5cf1-11dd-436a-9f40-fe744e2074ee",
+      "kind": "cabinet",
+      "center": {
+        "x": 12050,
+        "y": 5900.000000000001
+      },
+      "width": 600,
+      "depth": 1100,
+      "rotation": -90
+    },
+    "0d318e57-99c6-43c9-b26a-a032b4744101": {
+      "id": "0d318e57-99c6-43c9-b26a-a032b4744101",
+      "kind": "fridge",
+      "center": {
+        "x": 13050,
+        "y": 5750.000000000001
+      },
+      "width": 900,
+      "depth": 900,
+      "rotation": -180
+    },
+    "db60e3ec-6d01-4832-96eb-74922c1653ee": {
+      "id": "db60e3ec-6d01-4832-96eb-74922c1653ee",
+      "kind": "cooktop",
+      "center": {
+        "x": 11900,
+        "y": 4160.000000000001
+      },
+      "width": 400,
+      "depth": 500,
+      "rotation": 0
+    }
+  }
+}
